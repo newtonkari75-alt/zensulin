@@ -144,63 +144,6 @@
       }
     }
     </script>
-
-    <!-- ===== STRUCTURED DATA: WEBSITE ===== -->
-    <script type="application/ld+json">
-    {
-     "@context": "https://schema.org",
-     "@type": "WebSite",
-     "name": "ZenSulin Official",
-     "url": "https://zensulin.vercel.app/",
-     "potentialAction": {
-     "@type": "SearchAction",
-     "target": "https://zensulin.vercel.app/?s={search_term_string}",
-     "query-input": "required name=search_term_string"
-     }
-    }
-    </script>
-
-    <!-- ===== STRUCTURED DATA: FAQ ===== -->
-    <script type="application/ld+json">
-    {
-     "@context": "https://schema.org",
-     "@type": "FAQPage",
-     "mainEntity": [
-     {
-     "@type": "Question",
-     "name": "What Is ZenSulin?",
-     "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "ZenSulin is a dietary supplement formulated with botanical and metabolic ingredients designed to support healthy blood sugar levels and metabolic balance."
-     }
-     },
-     {
-     "@type": "Question",
-     "name": "How Does ZenSulin Work?",
-     "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "ZenSulin contains a blend of research-backed ingredients that support glucose metabolism, insulin sensitivity and overall metabolic wellness."
-     }
-     },
-     {
-     "@type": "Question",
-     "name": "How Long Should I Take ZenSulin?",
-     "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "For best results, consistent daily use is recommended. Many users choose multi-bottle packages to maintain ongoing metabolic support."
-     }
-     },
-     {
-     "@type": "Question",
-     "name": "Is There A Guarantee?",
-     "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Yes. ZenSulin is backed by a 180-day money-back guarantee, allowing customers to try the product risk free."
-     }
-     }
-     ]
-    }
-    </script>
 </head>
 <body class="text-gray-900 selection:bg-red-50 selection:text-red-900">
 
@@ -208,7 +151,6 @@
     <header class="brand-bg sticky top-0 z-50 shadow-md h-[60px] md:h-[70px] flex items-center">
         <div class="container mx-auto flex justify-between items-center px-4 md:px-6">
             <div class="flex items-center">
-                <!-- Header Logo with White Mask -->
                 <img src="images/logo.png" alt="ZenSulin Logo" class="h-6 md:h-8 w-auto white-logo-mask" onerror="this.src='https://via.placeholder.com/150x40?text=ZenSulin'">
             </div>
             <a href="#order" class="bg-white text-[#5C0000] px-6 py-2 rounded-full font-bold text-xs md:text-sm hover:bg-gray-100 transition-all uppercase tracking-wide">
@@ -247,7 +189,9 @@
                         <!-- Foto do Produto (Telemóvel) -->
                         <div class="lg:hidden order-2 my-8 flex flex-col items-center">
                             <div class="relative w-full max-w-[220px]">
-                                <img src="images/zensulin.png" alt="ZenSulin Product" class="w-full h-auto drop-shadow-2xl">
+                                <a href="#order">
+                                    <img src="images/zensulin.png" alt="ZenSulin Product" class="w-full h-auto drop-shadow-2xl">
+                                </a>
                                 <div class="absolute -top-2 -right-2 bg-yellow-500 text-white w-14 h-14 rounded-full flex flex-col items-center justify-center font-black rotate-12 border-2 border-white shadow-lg">
                                     <span class="text-[7px]">SAVE</span>
                                     <span class="text-lg leading-none">73%</span>
@@ -299,7 +243,9 @@
                     <div class="hidden lg:flex lg:col-span-5 flex-col items-center justify-center reveal active">
                         <div class="relative w-full max-w-[320px]">
                             <div class="absolute inset-0 bg-red-900/5 rounded-full blur-[100px] transform scale-150"></div>
-                            <img src="images/zensulin.png" alt="ZenSulin Bottles" class="w-full h-auto float-anim relative z-10 drop-shadow-2xl">
+                            <a href="#order" class="block transition-transform hover:scale-105">
+                                <img src="images/zensulin.png" alt="ZenSulin Bottles" class="w-full h-auto float-anim relative z-10 drop-shadow-2xl">
+                            </a>
                             
                             <div class="absolute -top-4 -right-4 bg-yellow-500 text-white w-20 h-20 rounded-full flex flex-col items-center justify-center font-black rotate-12 border-4 border-white shadow-xl z-20">
                                 <span class="text-[9px]">SAVE</span>
@@ -396,8 +342,10 @@
                     </div>
                     <div class="order-1 lg:order-2 flex justify-center">
                         <div class="max-w-xl bg-white p-4 rounded-3xl shadow-xl border border-gray-100">
-                            <!-- Label Image in images folder -->
-                            <img src="images/imgi_6_label.png" alt="ZenSulin Nutrition Label" class="w-full h-auto rounded-2xl" onerror="this.src='https://via.placeholder.com/600x800?text=Nutritional+Label'">
+                            <!-- Label Image linked to discount/order destination -->
+                            <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" class="block overflow-hidden rounded-2xl transition-all duration-300 hover:scale-[1.01] hover:shadow-lg active:scale-100">
+                                <img src="images/imgi_6_label.png" alt="ZenSulin Nutrition Label" class="w-full h-auto rounded-2xl" onerror="this.src='https://via.placeholder.com/600x800?text=Nutritional+Label'">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -410,7 +358,6 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-10 text-center lg:text-left">
                     <div class="lg:col-span-1 flex flex-col items-center lg:items-start">
                         <div class="flex flex-col items-center lg:items-start mb-6">
-                            <!-- Footer Logo Path -->
                             <img src="images/logo.png" alt="ZenSulin Logo" class="h-10 brightness-0 invert mb-2">
                             <span class="text-[10px] text-gray-600 uppercase tracking-[0.2em] font-bold">AUTHORIZED DISTRIBUTOR</span>
                         </div>
