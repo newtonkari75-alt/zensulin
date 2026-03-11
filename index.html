@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="referrer" content="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <title>ZenSulin | Suporte Natural para Glicose e Equilíbrio Metabólico</title>
+    <title>ZenSulin | Support Healthy Blood Sugar & Metabolic Balance</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/zensulin.png">
@@ -30,7 +30,6 @@
         }
         .brand-bg { background-color: var(--brand-color); }
         .brand-text { color: var(--brand-color); }
-        .border-brand { border-color: var(--brand-color); }
         
         .hero-section-bg { 
             position: relative; 
@@ -82,7 +81,7 @@
         }
     </style>
 </head>
-<body class="text-gray-900 selection:bg-red-100 selection:text-red-900">
+<body class="text-gray-900 selection:bg-red-50 selection:text-red-900">
 
     <!-- Header -->
     <header class="brand-bg sticky top-0 z-50 shadow-md h-[60px] md:h-[70px] flex items-center">
@@ -91,7 +90,7 @@
                 <img src="images/zensulin-logo.png" alt="ZenSulin Logo" class="h-6 md:h-8 w-auto brightness-0 invert" onerror="this.src='https://via.placeholder.com/150x40?text=ZenSulin'">
             </div>
             <a href="#order" class="bg-white text-[#5C0000] px-6 py-2 rounded-full font-bold text-xs md:text-sm hover:bg-gray-100 transition-all uppercase tracking-wide">
-                PEDIR AGORA
+                CLAIM YOUR DISCOUNT
             </a>
         </div>
     </header>
@@ -103,160 +102,192 @@
             <div class="container mx-auto px-6 relative z-10 py-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                     
-                    <!-- CONTEÚDO -->
+                    <!-- TEXT CONTENT -->
                     <div class="lg:col-span-7 flex flex-col text-center lg:text-left">
                         <div class="order-1">
                             <div class="inline-flex items-center gap-2 bg-red-50 text-[#5C0000] px-4 py-1.5 rounded-full mb-4 border border-red-100 mx-auto lg:mx-0 w-fit">
-                                <span class="text-[10px] md:text-xs font-bold uppercase tracking-wider">Mais de 75.000 clientes satisfeitos</span>
+                                <span class="text-[10px] md:text-xs font-bold uppercase tracking-wider">TRUSTED BY 75,000+ HAPPY CUSTOMERS</span>
                             </div>
 
-                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 tracking-tight text-gray-900">
-                                Suporte Saudável para a <br class="hidden lg:block"> Glicose com <br> 
-                                <span class="brand-text">O Poder do ZenSulin</span>
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-2 tracking-tight text-gray-900">
+                                Support Healthy <br class="hidden lg:block"> Blood Sugar
                             </h1>
+                            <h2 class="text-2xl md:text-3xl font-bold mb-6 brand-text">With the Power of ZenSulin™</h2>
 
-                            <div class="max-w-xl mx-auto lg:mx-0 mb-6">
-                                <p class="text-sm md:text-base font-bold text-gray-800 uppercase mb-2">Assuma o controle da sua saúde metabólica naturalmente.</p>
+                            <div class="max-w-xl mx-auto lg:mx-0 mb-8 space-y-4">
+                                <p class="text-sm md:text-base font-bold text-gray-800 text-balance">Take control of your metabolic health with a natural formula designed to support balanced blood sugar and daily energy.</p>
                                 <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-                                    ZenSulin combina 11 ingredientes pesquisados clinicamente para ajudar a manter níveis saudáveis de açúcar no sangue e reduzir a vontade de doces.
+                                    ZenSulin combines 11 carefully selected ingredients backed by research to help support healthy glucose levels, improve metabolic balance, and reduce unwanted cravings.
                                 </p>
                             </div>
                         </div>
 
-                        <!-- FOTO DO PRODUTO (Mobile) -->
+                        <!-- MOBILE PRODUCT PHOTO -->
                         <div class="lg:hidden order-2 my-8 flex flex-col items-center">
-                            <div class="relative w-full max-w-[280px]">
-                                <img src="images/zensulin.png" alt="ZenSulin Bottles" class="w-full h-auto drop-shadow-2xl">
-                                <div class="absolute -top-2 -right-2 bg-yellow-500 text-white w-16 h-16 rounded-full flex flex-col items-center justify-center font-black rotate-12 border-2 border-white shadow-lg">
-                                    <span class="text-[8px]">ECONOMIZE</span>
-                                    <span class="text-xl leading-none">50%</span>
+                            <div class="relative w-full max-w-[220px]">
+                                <img src="images/zensulin.png" alt="ZenSulin Product" class="w-full h-auto drop-shadow-2xl">
+                                <div class="absolute -top-2 -right-2 bg-yellow-500 text-white w-14 h-14 rounded-full flex flex-col items-center justify-center font-black rotate-12 border-2 border-white shadow-lg">
+                                    <span class="text-[7px]">SAVE</span>
+                                    <span class="text-lg leading-none">50%</span>
                                 </div>
                             </div>
-                            <div class="mt-6 w-full max-w-[240px] opacity-90">
-                                <img src="images/imgi_4_certifications.png" alt="Certificações" class="w-full h-auto">
+                            <div class="mt-6 w-full max-w-[200px] opacity-90">
+                                <img src="images/imgi_4_certifications.png" alt="Certifications" class="w-full h-auto">
                             </div>
                         </div>
 
                         <!-- Checklist + CTA -->
                         <div class="order-3">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 mb-8 max-w-lg mx-auto lg:mx-0 text-left">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4 mb-8 max-w-xl mx-auto lg:mx-0 text-left">
                                 <div class="flex items-center gap-2">
                                     <div class="brand-bg p-1 rounded-full shrink-0"><i data-feather="check" class="text-white w-3 h-3" stroke-width="4"></i></div>
-                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Níveis de Glicose Saudáveis</span>
+                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Supports Healthy Blood Sugar Levels</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="brand-bg p-1 rounded-full shrink-0"><i data-feather="check" class="text-white w-3 h-3" stroke-width="4"></i></div>
-                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Controle Natural do Peso</span>
+                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Helps Reduce Sugar Cravings</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="brand-bg p-1 rounded-full shrink-0"><i data-feather="check" class="text-white w-3 h-3" stroke-width="4"></i></div>
-                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Energia Estável o Dia Todo</span>
+                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Promotes Natural Weight Balance</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="brand-bg p-1 rounded-full shrink-0"><i data-feather="check" class="text-white w-3 h-3" stroke-width="4"></i></div>
-                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Garantia de 180 Dias</span>
+                                    <span class="font-bold text-gray-700 text-xs md:text-sm">Supports Stable Energy Throughout the Day</span>
+                                </div>
+                                <div class="flex items-center gap-2 sm:col-span-2">
+                                    <div class="brand-bg p-1 rounded-full shrink-0"><i data-feather="check" class="text-white w-3 h-3" stroke-width="4"></i></div>
+                                    <span class="font-bold text-gray-700 text-xs md:text-sm">180-Day Satisfaction Guarantee</span>
                                 </div>
                             </div>
 
                             <div class="flex flex-col sm:flex-row items-center gap-4">
                                 <a href="#order" class="btn-shine brand-bg text-white px-8 py-4 rounded-xl font-black text-base w-full sm:w-auto text-center shadow-xl uppercase tracking-tight">
-                                    GARANTIR MEU DESCONTO
+                                    CLAIM YOUR DISCOUNT
                                 </a>
                                 <div class="text-center lg:text-left">
-                                    <p class="text-[10px] text-gray-400 uppercase font-bold tracking-widest leading-none">A partir de</p>
-                                    <p class="text-xl font-black text-gray-900">$49 <span class="text-xs font-normal text-gray-500">/ frasco</span></p>
+                                    <p class="text-[10px] text-gray-400 uppercase font-bold tracking-widest leading-none">Starting at</p>
+                                    <p class="text-xl font-black text-gray-900">$49 <span class="text-xs font-normal text-gray-500">per bottle</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- FOTO DO PRODUTO (Desktop) -->
+                    <!-- DESKTOP PRODUCT PHOTO -->
                     <div class="hidden lg:flex lg:col-span-5 flex-col items-center justify-center reveal active">
-                        <div class="relative w-full max-w-[420px]">
+                        <div class="relative w-full max-w-[320px]">
                             <div class="absolute inset-0 bg-red-900/5 rounded-full blur-[100px] transform scale-150"></div>
                             <img src="images/zensulin.png" alt="ZenSulin Bottles" class="w-full h-auto float-anim relative z-10 drop-shadow-2xl">
                             
-                            <div class="absolute -top-4 -right-4 bg-yellow-500 text-white w-24 h-24 rounded-full flex flex-col items-center justify-center font-black rotate-12 border-4 border-white shadow-xl z-20">
-                                <span class="text-[10px]">ECONOMIZE</span>
-                                <span class="text-2xl leading-none">50%</span>
+                            <div class="absolute -top-4 -right-4 bg-yellow-500 text-white w-20 h-20 rounded-full flex flex-col items-center justify-center font-black rotate-12 border-4 border-white shadow-xl z-20">
+                                <span class="text-[9px]">SAVE</span>
+                                <span class="text-xl leading-none">50%</span>
                             </div>
                             <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 brand-bg text-white px-6 py-2 rounded-lg font-bold text-xs shadow-xl z-20 -rotate-1 border-2 border-white uppercase tracking-tight whitespace-nowrap">
-                                OFERTA POR TEMPO LIMITADO
+                                LIMITED TIME OFFER
                             </div>
                         </div>
                         
-                        <div class="mt-8 relative z-10 w-full max-w-[300px] opacity-80">
-                            <img src="images/imgi_4_certifications.png" alt="Certificações" class="w-full h-auto">
+                        <div class="mt-8 relative z-10 w-full max-w-[240px] opacity-80">
+                            <img src="images/imgi_4_certifications.png" alt="Certifications" class="w-auto h-10">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seletor de Destino -->
+        <!-- Destination Selector -->
         <section id="order" class="py-16 bg-gray-50 border-t border-gray-100">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-2xl md:text-3xl font-black mb-10 uppercase tracking-tighter brand-text">Escolha seu Destino</h2>
+                <h2 class="text-2xl md:text-3xl font-black mb-10 uppercase tracking-tighter brand-text">CHOOSE YOUR DESTINATION</h2>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3">
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3 group">
                         <img src="https://flagcdn.com/w160/us.png" class="w-10 h-auto rounded shadow-sm" alt="United States">
-                        <span class="font-bold text-sm text-center">United States</span>
+                        <span class="font-bold text-sm text-center group-hover:brand-text">United States</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3">
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3 group">
                         <img src="https://flagcdn.com/w160/ca.png" class="w-10 h-auto rounded shadow-sm" alt="Canada">
-                        <span class="font-bold text-sm text-center">Canada</span>
+                        <span class="font-bold text-sm text-center group-hover:brand-text">Canada</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3">
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3 group">
                         <img src="https://flagcdn.com/w160/nz.png" class="w-10 h-auto rounded shadow-sm" alt="New Zealand">
-                        <span class="font-bold text-sm text-center">New Zealand</span>
+                        <span class="font-bold text-sm text-center group-hover:brand-text">New Zealand</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3">
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3 group">
                         <img src="https://flagcdn.com/w160/au.png" class="w-10 h-auto rounded shadow-sm" alt="Australia">
-                        <span class="font-bold text-sm text-center">Australia</span>
+                        <span class="font-bold text-sm text-center group-hover:brand-text">Australia</span>
                     </a>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3">
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2W5GGDWK/" target="_blank" class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-[#5C0000] transition-all w-40 flex flex-col items-center gap-3 group">
                         <img src="https://flagcdn.com/w160/gb.png" class="w-10 h-auto rounded shadow-sm" alt="United Kingdom">
-                        <span class="font-bold text-sm text-center">United Kingdom</span>
+                        <span class="font-bold text-sm text-center group-hover:brand-text">United Kingdom</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Ingredientes -->
+        <!-- Ingredients Section -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter">Ingredientes Apoiados pela Ciência</h2>
-                    <p class="text-gray-600">ZenSulin contém uma mistura proprietária de 11 ingredientes botânicos e metabólicos selecionados.</p>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter brand-text">SCIENCE-BACKED INGREDIENTS</h2>
+                    <p class="text-gray-600">ZenSulin features a proprietary blend of 11 metabolic and botanical ingredients carefully selected to support healthy glucose metabolism.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="ingredient-card p-8 rounded-[2.5rem] bg-white text-center shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
-                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">Berberina HCL</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Poderoso composto vegetal que auxilia na sensibilidade à insulina.</p>
+                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">BERBERINE HCL</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">A powerful plant compound widely studied for its role in supporting healthy insulin sensitivity and metabolic balance.</p>
                     </div>
                     <div class="ingredient-card p-8 rounded-[2.5rem] bg-white text-center shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
-                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">Casca de Canela</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Ajuda a manter os níveis de glicose em jejum saudáveis.</p>
+                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">CINNAMON BARK</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">Traditionally used to help maintain healthy fasting glucose levels and support balanced metabolism.</p>
                     </div>
                     <div class="ingredient-card p-8 rounded-[2.5rem] bg-white text-center shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
-                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">Cromo</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Mineral essencial para o metabolismo de carboidratos.</p>
+                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">CHROMIUM</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">An essential mineral known to support carbohydrate metabolism and help maintain normal blood sugar levels.</p>
                     </div>
                     <div class="ingredient-card p-8 rounded-[2.5rem] bg-white text-center shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
-                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">Melão Amargo</h3>
-                        <p class="text-sm text-gray-500 leading-relaxed">Botânico tradicional para regulação natural do açúcar.</p>
+                        <h3 class="font-black text-xl mb-3 uppercase tracking-tight brand-text">BITTER MELON</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">A traditional botanical used in natural wellness practices to support glucose regulation and metabolic health.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Nutritional Label Section -->
-        <section class="py-12 bg-gray-50">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-2xl font-black mb-8 uppercase tracking-tighter brand-text">Informações Nutricionais Completas</h2>
-                <div class="max-w-2xl mx-auto bg-white p-4 rounded-3xl shadow-lg border border-gray-100">
-                    <img src="images/imgi_6_label.png" alt="Informações Nutricionais ZenSulin" class="w-full h-auto rounded-2xl mx-auto" onerror="this.src='https://via.placeholder.com/600x800?text=Nutritional+Label'">
+        <!-- Nutrition Info Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h2 class="text-3xl md:text-4xl font-black mb-8 uppercase tracking-tighter brand-text">COMPLETE NUTRITION INFORMATION</h2>
+                        <div class="space-y-6 text-gray-600 text-sm md:text-base">
+                            <p>ZenSulin is manufactured in facilities that follow strict quality standards to ensure purity, potency, and consistency.</p>
+                            <p class="font-bold text-gray-800">Each serving delivers a carefully balanced blend of ingredients designed to support:</p>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-3">
+                                    <div class="brand-bg w-1.5 h-1.5 rounded-full shrink-0"></div>
+                                    <span class="font-medium text-gray-800">Healthy glucose metabolism</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="brand-bg w-1.5 h-1.5 rounded-full shrink-0"></div>
+                                    <span class="font-medium text-gray-800">Natural energy production</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="brand-bg w-1.5 h-1.5 rounded-full shrink-0"></div>
+                                    <span class="font-medium text-gray-800">Reduced sugar cravings</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="brand-bg w-1.5 h-1.5 rounded-full shrink-0"></div>
+                                    <span class="font-medium text-gray-800">Overall metabolic wellness</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 flex justify-center">
+                        <div class="max-w-xl bg-white p-4 rounded-3xl shadow-xl border border-gray-100">
+                            <img src="images/imgi_6_label.png" alt="ZenSulin Nutrition Label" class="w-full h-auto rounded-2xl" onerror="this.src='https://via.placeholder.com/600x800?text=Nutritional+Label'">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -266,45 +297,45 @@
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-10 text-center lg:text-left">
                     <div class="lg:col-span-1 flex flex-col items-center lg:items-start">
-                        <div class="flex flex-col items-center lg:items-start mb-4">
+                        <div class="flex flex-col items-center lg:items-start mb-6">
                             <img src="images/zensulin-logo.png" alt="ZenSulin Logo" class="h-10 brightness-0 invert mb-2">
-                            <span class="text-[9px] text-gray-600 uppercase tracking-[0.2em] font-medium">Distribuidor Autorizado</span>
+                            <span class="text-[10px] text-gray-600 uppercase tracking-[0.2em] font-bold">Authorized Distributor</span>
                         </div>
-                        <p class="text-xs leading-relaxed opacity-60">Focados em sua jornada de saúde através de suporte nutricional premium.</p>
+                        <p class="text-xs leading-relaxed opacity-60">ZenSulin is designed for individuals seeking natural support for their metabolic health and blood sugar balance.</p>
                     </div>
                     
                     <div>
-                        <h4 class="text-white font-black uppercase tracking-widest text-[10px] mb-4">Suporte</h4>
-                        <div class="text-[11px] space-y-2">
-                            <p class="flex items-center justify-center lg:justify-start gap-2"><i data-feather="map-pin" class="w-3 h-3"></i> Aurora, CO 80011, USA</p>
-                            <p class="flex items-center justify-center lg:justify-start gap-2"><i data-feather="phone" class="w-3 h-3"></i> (302) 200-3480</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4 class="text-white font-black uppercase tracking-widest text-[10px] mb-4">Políticas</h4>
+                        <h4 class="text-white font-black uppercase tracking-widest text-[10px] mb-4">SUPPORT</h4>
                         <div class="text-[11px] space-y-3">
-                            <p class="flex items-center justify-center lg:justify-start gap-2 text-white font-bold"><i data-feather="shield" class="w-3 h-3 text-red-700"></i> Garantia de 180 Dias</p>
-                            <p class="flex items-center justify-center lg:justify-start gap-2 text-white font-bold"><i data-feather="lock" class="w-3 h-3 text-red-700"></i> Checkout Seguro</p>
+                            <p class="flex items-center justify-center lg:justify-start gap-2"><i data-feather="map-pin" class="w-3 h-3 brand-text"></i> Aurora, CO 80011, USA</p>
+                            <p class="flex items-center justify-center lg:justify-start gap-2"><i data-feather="phone" class="w-3 h-3 brand-text"></i> (302) 200-3480</p>
                         </div>
                     </div>
 
                     <div>
-                        <h4 class="text-white font-black uppercase tracking-widest text-[10px] mb-4">Aviso Legal</h4>
-                        <div class="text-[10px] space-y-2 leading-relaxed opacity-60">
-                            <p>Resultados podem variar. Consulte seu médico.</p>
-                            <p>Este produto não pretende diagnosticar, tratar ou curar doenças.</p>
+                        <h4 class="text-white font-black uppercase tracking-widest text-[10px] mb-4">POLICIES</h4>
+                        <div class="text-[11px] space-y-4">
+                            <p class="flex items-center justify-center lg:justify-start gap-2 text-white font-bold"><i data-feather="shield" class="w-3 h-3 brand-text"></i> 180-Day Satisfaction Guarantee</p>
+                            <p class="flex items-center justify-center lg:justify-start gap-2 text-white font-bold"><i data-feather="lock" class="w-3 h-3 brand-text"></i> Secure Checkout</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-black uppercase tracking-widest text-[10px] mb-4">LEGAL NOTICE</h4>
+                        <div class="text-[10px] space-y-3 leading-relaxed opacity-60">
+                            <p>Statements on this website have not been evaluated by the Food and Drug Administration.</p>
+                            <p>This product is not intended to diagnose, treat, cure, or prevent any disease. Always consult with a qualified healthcare professional before starting any supplement.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <div class="flex gap-8 text-[10px] font-black uppercase tracking-widest">
-                        <button class="hover:text-white transition-colors">Termos</button>
-                        <button class="hover:text-white transition-colors">Privacidade</button>
-                        <button class="hover:text-white transition-colors">Reembolsos</button>
+                        <button class="hover:text-white transition-colors">Terms</button>
+                        <button class="hover:text-white transition-colors">Privacy</button>
+                        <button class="hover:text-white transition-colors">Refunds</button>
                     </div>
-                    <p class="text-[10px] opacity-30 uppercase font-bold tracking-widest">&copy; 2025 ZenSulin Health Group. Todos os direitos reservados.</p>
+                    <p class="text-[10px] opacity-30 uppercase font-bold tracking-widest">&copy; 2025 ZenSulin Wellness Group. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>
